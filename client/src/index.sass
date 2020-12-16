@@ -1,0 +1,77 @@
+@import './assets/sass/_fonts'
+@import './assets/sass/_variables'
+body
+  overflow-x: hidden
+  
+#root
+  height: 100vh
+  display: flex
+  flex-direction: column
+
+body, html, p, ul, li
+  margin: 0
+  padding: 0
+  font-family: 'Roboto Regular'
+  color: $txt
+
+a, a:link, a:visited, a:hover, a:active 
+  text-decoration: none
+
+a:hover
+  color: $lightBlue !important
+
+.hide
+    display: none !important
+        
+ul, li
+    list-style: none
+
+.light
+    font-family: 'Roboto Light'
+
+.medium
+    font-family: 'Roboto Medium'
+
+.bold
+    font-family: 'Roboto Bold'
+
+.left
+    text-align: left
+.right
+    text-align: right
+.center
+    text-align: center
+.justify
+    text-align: justify
+
+input
+  border-radius: 8px
+  border: 1px solid #668496
+  background-color: #fff
+  width: 100%
+  height: 47px
+  box-sizing: border-box
+  padding: 0 0 0 60px
+  outline: none
+
+.primory-btn 
+    border-radius: 8px
+    background-color: #0099f1
+    width: 100%
+    height: 47px
+    color: #fff
+    padding: 0
+    outline: none
+    border: none
+    margin: 6px 0
+    transition: 0.2s
+
+.primory-btn:hover
+    background-color: #00a5f1
+
+input[type='submit']
+    cursor: pointer
+
+.fargot 
+    color: #fff
+    margin-top: 10px
