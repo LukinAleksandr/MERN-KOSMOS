@@ -23,11 +23,6 @@ const AuthPage = () => {
     password: '',
   })
 
-  // useEffect(() => {
-  //   console.log(searchForm)
-  //   console.log(authForm)
-  // }, [searchForm, authForm])
-
   const pageClickHandler = (ev) => {
     console.log(ev.target.className)
     if (
@@ -50,6 +45,13 @@ const AuthPage = () => {
   const searchInputClickHandler = () => {
     setSearchForm((prevState) => {
       return { ...searchForm, listVisible: !prevState.listVisible }
+    })
+  }
+  const searchListClickHandler = (ev) => {
+    setSearchForm({
+      ...searchForm,
+      subcategories: ev.target.value,
+      listVisible: false,
     })
   }
   const authInputChengeHandler = (ev) => {
